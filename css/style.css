@@ -41,3 +41,22 @@ a{
     margin: 0 auto; 
     padding: 20px; 
 }
+.hide{
+    display: none; /* 화면에 표시: 안함*/
+}
+.movie{ /*클래스 movie의 스타일을 결정한다.*/
+    width: 600px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.movie-title{
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase; /* 대문자 */
+    margin: 2rem 0 1rem 0; /*상 ->우 하->왼 순서 시계방향 */
+}
+.movie-desc{
+    text-align: center;
+    font-size: 16px;
+    color: #555555; /*HEX 색상 표기법*/
+}
