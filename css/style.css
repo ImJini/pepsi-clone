@@ -27,3 +27,13 @@ a{color: crimson;
     padding: 50px; /* 상,하 50 픽셀*/
     
 }
+.menu{
+    padding: 20px; /* 상,하 50 픽셀*/
+    text-align: center;
+    background-color: #005891; /*배경색상*/
+}
+a{
+    color: white;
+    margin: 10px;
+
+}
