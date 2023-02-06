@@ -78,3 +78,9 @@ a{
     margin-bottom: 3.5rem;
     font-size: 0.9rem;
 }
+@media screen and (max-width:430px) {
+    body{
+        background-color: gold;
+    }
+}
+    
