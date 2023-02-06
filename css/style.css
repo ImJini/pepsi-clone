@@ -64,3 +64,17 @@ a{
     text-align: center; /* 그림은 <-- 텍스트*/
     margin: 2rem 1rem; /* 밖여백 상하 2배, 좌우 기본값*/
 }
+#line{
+    margin: 3rem0;/*위,아래 3rem 좌,우 0(=적용X)*/
+}
+.contact, .location{ /* 왜? <h2 class="movie-title"과 다른가?*/ 
+    text-align: center;
+}
+.location p:nth-child(1){ /*두개의 p중에서 첫번째(자식요소)*/
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+.location p:nth-child(2){ /*두개의 p중에서 두번째(자식요소)*/
+    margin-bottom: 3.5rem;
+    font-size: 0.9rem;
+}
