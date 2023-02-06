@@ -65,7 +65,7 @@ a{
     margin: 2rem 1rem; /* 밖여백 상하 2배, 좌우 기본값*/
 }
 #line{
-    margin: 3rem0;/*위,아래 3rem 좌,우 0(=적용X)*/
+    margin: 3rem 0;/*위,아래 3rem 좌,우 0(=적용X)*/
 }
 .contact, .location{ /* 왜? <h2 class="movie-title"과 다른가?*/ 
     text-align: center;
