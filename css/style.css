@@ -27,60 +27,107 @@ a{color: crimson;
     padding: 50px; /* 상,하 50 픽셀*/
     
 }
+.burger{
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 5%;
+}
 .menu{
     padding: 20px; /* 상,하 50 픽셀*/
     text-align: center;
     background-color: #005891; /*배경색상*/
+    margin: auto;
 }
 a{
     color: white;
     margin: 10px;
 }
+
 .hero{
     width: 800px;
     margin: 0 auto; 
     padding: 20px; 
 }
+
 .hide{
     display: none; /* 화면에 표시: 안함*/
 }
+
 .movie{ /*클래스 movie의 스타일을 결정한다.*/
     width: 600px;
     margin: 0 auto;
     font-size: 0;
 }
+
 .movie-title{
     font-size: 22px;
     text-align: center;
     text-transform: uppercase; /* 대문자 */
     margin: 2rem 0 1rem 0; /*상 ->우 하->왼 순서 시계방향 */
 }
+
 .movie-desc{
     text-align: center;
     font-size: 16px;
     color: #555555; /*HEX 색상 표기법*/
 }
+
 .social{
     text-align: center; /* 그림은 <-- 텍스트*/
     margin: 2rem 1rem; /* 밖여백 상하 2배, 좌우 기본값*/
 }
+
 #line{
     margin: 3rem 0;/*위,아래 3rem 좌,우 0(=적용X)*/
 }
+
 .contact, .location{ /* 왜? <h2 class="movie-title"과 다른가?*/ 
     text-align: center;
 }
+
 .location p:nth-child(1){ /*두개의 p중에서 첫번째(자식요소)*/
     margin: 2rem 0;
     font-size: 1.2rem;
 }
+
 .location p:nth-child(2){ /*두개의 p중에서 두번째(자식요소)*/
     margin-bottom: 3.5rem;
     font-size: 0.9rem;
 }
+
+
+/*반응형 웹 =모바일을 위한 미디어쿼리 삽입)*/
 @media screen and (max-width:430px) {
-    body{
-        background-color: gold;
+    .burger{
+        display: block; /* block level element : 블럭요소 */
     }
+    .menu{
+        display: none;
+    }
+    .hero{
+        width: 430px;
+    }
+   .hero img{
+    width: 100%; /* 가록 폭 :가득 채워서*/
+    object-fit:  cover; /* 오브젝트-맞춤: 알맞게 (비율에 근거해서)*/
+   }
+   .movie{
+    width: 100%;
+   }
+
+   .movie img{
+    /* 2의 img에 적용*/
+    width: 75%;
+    margin:10% 15%; /* 좌우 15씩 위아래 10씩 합쳐서100으로*/
+    object-fit: cover;
+   }
+
+   .movie img:nth-of-type(2){
+    /* 두번째 이미지는 숨김*==>피그마 설계 반영.*/
+    display: none;
+   }
+
 }
+
     
