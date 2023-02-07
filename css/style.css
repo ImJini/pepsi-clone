@@ -27,10 +27,11 @@ a{color: crimson;
     padding: 50px; /* 상,하 50 픽셀*/
     
 }
-.burger{
+.opener{
+    /*버거였었다.*/
     display: none;
     position: absolute;
-    top: 100px;
+    top: 60px;
     right: 5%;
 }
 .menu{
@@ -96,14 +97,38 @@ a{
     font-size: 0.9rem;
 }
 
+#closer {
+    font-size: 4rem;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    display: block;
+    margin: 0 0 10rem 0;
+    position: relative;
+    top: 18px;
+    left: 295px;
+    /* text-align: right; */
+}
 
 /*반응형 웹 =모바일을 위한 미디어쿼리 삽입)*/
 @media screen and (max-width:430px) {
-    .burger{
+    .opener{
         display: block; /* block level element : 블럭요소 */
     }
-    .menu{
-        display: none;
+    .menu {
+        position: absolute;
+        width:76.7674418604651163%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background-color: rgba(19,30,68,0.8);
+        background-image: url("../images/mobile-bg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .menu a{
+        display: block;
+        text-align: left;
     }
     .hero{
         width: 430px;
