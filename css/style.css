@@ -116,7 +116,7 @@ a{
         display: block; /* block level element : 블럭요소 */
     }
     .menu {
-        position: absolute;
+        position: fixed;
         width:76.7674418604651163%;
         right: 0;
         top: 0;
