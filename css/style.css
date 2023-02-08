@@ -76,14 +76,7 @@ a{
     font-size: 16px;
     color: #555555; /*HEX 색상 표기법*/
 }
-.brand-body{
-    padding: 30px;
-}
-.brand-body img{
-    width: 80%;
-    object-fit: contain;
-    margin: 30px;
-}
+
 .social{
     text-align: center; /* 그림은 <-- 텍스트*/
     margin: 2rem 1rem; /* 밖여백 상하 2배, 좌우 기본값*/
@@ -108,11 +101,11 @@ a{
 }
 
 #closer {
+    display: none;
     font-size: 4rem;
     background-color: transparent;
     border: 0;
     color: white;
-    display: block;
     margin: 0 0 10rem 0;
     position: relative;
     top: 18px;
@@ -122,6 +115,17 @@ a{
 
 /*반응형 웹 =모바일을 위한 미디어쿼리 삽입)*/
 @media screen and (max-width:430px) {
+    #closer{
+        display: block;
+    }
+    .brand-body{
+        padding: 30px;
+    }
+    .brand-body img{
+        width: 80%;
+        object-fit: contain;
+        margin: 30px;
+    }
     .opener{
         display: block; /* block level element : 블럭요소 */
     }
