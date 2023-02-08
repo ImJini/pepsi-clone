@@ -60,15 +60,18 @@ a{
     margin: 0 auto;
     font-size: 0;
 }
+.tip{
+    text-align: center;
+}
 
-.movie-title{
+.page-title {
     font-size: 22px;
     text-align: center;
     text-transform: uppercase; /* 대문자 */
     margin: 2rem 0 1rem 0; /*상 ->우 하->왼 순서 시계방향 */
 }
 
-.movie-desc{
+.page-desc{
     text-align: center;
     font-size: 16px;
     color: #555555; /*HEX 색상 표기법*/

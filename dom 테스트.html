@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background: gold;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="target" class="hide">DOM 테스트</h1>
+    <h2>아래 버튼을 눌러서 기능을 테스트 하세요</h2>
+    <button id="showBt">보이기</button>
+    <button id="hideBt">감추기</button>
+    <script>
+        //1. 버튼 찾기
+        const showBt = document.querySelector("#showBt");
+        const hideBt = document.querySelector("#hideBt");
+        
+        //2. 조작 제어 대상 찾기
+        const target = document.querySelector("#target");
+
+        //3. 이벤트 추가 (특정 이벤트에서 처리할 일)
+        //3-1 보이기 버튼에게 할일
+        showBt.addEventListener("click", function() {
+            //3-2 .타겟을 표시: .하이드 클래스를 제거 또는 스타일을 직접 조작
+            target.classList.remove("hide"); //클래스명만 적음.
+        });
+        //3-2 감추기 버튼에게 할일 
+        hideBt.addEventListener("click", function() {
+            //3-2 .타겟을 표시: .하이드 클래스를 제거 또는 스타일을 직접 조작
+            target.classList.add("hide"); //클래스명만 적음.
+        });
+
+    </script>
+</body>
+</html>
